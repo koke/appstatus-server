@@ -1,0 +1,1 @@
+SIGNUP_DISABLED = true

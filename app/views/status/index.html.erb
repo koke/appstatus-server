@@ -1,0 +1,19 @@
+<h1>iPhone Apps Status</h1>
+
+<% @apps.each do |app| %>
+  <% status = app.status %>
+  <div id="app<%= app.app_id %>" class="app <%= status.to_s %>">
+    <img class="icon" alt="<%= app.name %>" src="<%= app.icon.url(:thumb) %>" />
+    <h2><%= app_link "#{app.name} (#{app.version})", app %></h2>
+    <p class="status description">
+      <%= case status
+      when :confirmed
+        "<strong>Broken</strong>: failure has been confirmed. Wait for a new version"
+      when :probably
+        "<strong>Failure reported</strong>: pending confirmation."
+      when :working
+        "<strong>Working</strong>: everything works as expected."
+      end %>
+    </p>
+  </div>
+<% end %>

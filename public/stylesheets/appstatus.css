@@ -1,0 +1,12 @@
+body { font-family: Lucida Grande, Helvetica, Arial, sans-serif;}
+#main { width: 600px; margin: 20px auto;}
+.app { clear: left; margin: 20px 0; height: 57px;}
+.icon { float: left; width: 57px; margin-right: 20px;}
+h2,p {margin: 0;}
+h2 a {color:inherit;text-decoration: inherit;}
+.working { background: url(../images/working.png) repeat-y right center;}
+.probably { background: url(../images/probably.png) repeat-y right center;}
+.confirmed { background: url(../images/confirmed.png) repeat-y right center;}
+.working strong { color: #090;}
+.probably strong { color: #c60;}
+.confirmed strong { color: #c00;}

@@ -1,0 +1,7 @@
+<h1>Apps</h1>
+<p><%= link_to "Add new", :action => "new" %></p>
+<ul>
+  <% @apps.each do |app| %>
+  <li><%= image_tag app.icon.url(:thumb) %> <%= link_to app.name, :action => "edit", :id => app %></li>
+  <% end %>
+</ul>
