@@ -1,1 +1,0 @@
-Paperclip.options.merge!(:command_path => "/usr/local/bin") 
